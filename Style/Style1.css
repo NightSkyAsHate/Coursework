@@ -1,0 +1,61 @@
+.join {
+	-fx-background-color: transparent;
+	-fx-text-fill: #504f4f;
+	-fx-border-width: 0px 0px 2px 0px;
+	-fx-border-color: #ffc801;
+	-fx-font-size: 20px;
+}
+.background {
+	-fx-background-image: url(background.jpg);
+	-fx-background-repeat: stretch; 
+	-fx-background-position: center, right top;
+	-fx-background-size: cover, auto;
+}
+.lablies {
+ -fx-text-fill: #504f4f;
+ -fx-font-size: 24px;
+}
+.textFields{
+ 	-fx-font-size: 24px;
+	-fx-text-fill: #504f4f;
+	-fx-background-color: transparent;
+	-fx-border-width: 0px 0px 2px 0px;
+	-fx-border-color: #ffc801;
+	-fx-prompt-text-fill: #ffc801;
+}
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.buttonBack{
+-fx-background-image: url(back.png);
+-fx-background-repeat: stretch; 
+-fx-background-position: center, right top;
+-fx-background-size: cover, auto;
+-fx-background-color:transparent;
+}
+
+.pic1{
+-fx-background-image: url(gerb.png);
+-fx-background-repeat: stretch; 
+-fx-background-position: center, right top;
+-fx-background-size: cover, auto;
+-fx-background-color:transparent;
+}
+
+.pic2{
+-fx-background-image: url(pict11.jpg);
+-fx-background-repeat: stretch; 
+-fx-background-position: center, right top;
+-fx-background-size: cover, auto;
+-fx-background-color:transparent;
+}

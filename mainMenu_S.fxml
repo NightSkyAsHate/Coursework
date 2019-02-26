@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="first" prefHeight="827.0" prefWidth="1214.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainMenu_SController">
+   <children>
+      <HBox layoutX="336.0" layoutY="-36.0" onMouseDragged="#draged" onMousePressed="#pressed" style="-fx-background-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="exit" alignment="CENTER" layoutX="12.0" layoutY="33.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: #f44949;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <RadialGradient centerX="0.4722222222222222" centerY="0.5095238095238095" focusDistance="0.11627906976744184" radius="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="fullScreen" alignment="CENTER" layoutX="15.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: yellow;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="toBar" alignment="CENTER" layoutX="29.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: #6ced6a;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+         </padding>
+      </HBox>
+      <AnchorPane layoutX="218.0" layoutY="143.0" prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@Style/Style2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <TabPane layoutX="75.0" layoutY="127.0" prefHeight="250.0" prefWidth="200.0" styleClass="tabPane" stylesheets="@Style/Style3.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="60.0" tabMinHeight="60.0" tabMinWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <tabs>
+                  <Tab fx:id="coursesJournal" style="-fx-background-color: transparent; -fx-text-fill: #504f4f; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ffc801; -fx-font-size: 28px;" text="Мои курсы">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

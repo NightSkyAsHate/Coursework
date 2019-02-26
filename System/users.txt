@@ -1,0 +1,8 @@
+admin&password&null&null&null&admin&0!0
+admin&password&null&null&null&admin&0!0
+Kirill&kirill&Kirill&Korobeynikov&Vladimirovich&student&7!5
+Batya&samiilychshiu&Ildar&Garifyanov&Rifkatovich&teacher&5!6
+baku&mahou&Mickael&Nestyagin&Vladimirovich&teacher&0!0
+Buk&haray&Nail&Bukharaev&Raisovich&teacher&4!7
+camswolf&herman&Kamila&Shangaraeva&Rustemovna&student&7!5
+kuk&kuk&kek&kekeke&kak&student&6!7

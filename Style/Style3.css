@@ -1,0 +1,21 @@
+.tabPane {
+	-fx-tab-min-width:360px;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0.0;
+	-fx-background-radius: 0.0;
+}
+
+.tab:selected { 
+    	-fx-alignment: CENTER;
+    	-fx-text-fill: #96b946;
+}
+
+.jfx-tab-pane .headers-region
+{
+-fx-background-color: grey;
+}
+
+.jfx-tab-pane .tab-header-background
+{
+-fx-background-color: grey;
+}

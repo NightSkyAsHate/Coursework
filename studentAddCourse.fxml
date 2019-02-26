@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="first" prefHeight="827.0" prefWidth="1214.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.studentAddCourseController">
+   <children>
+      <HBox layoutX="336.0" layoutY="-36.0" onMouseDragged="#draged" onMousePressed="#pressed" style="-fx-background-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="exit" alignment="CENTER" layoutX="12.0" layoutY="33.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: #f44949;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <RadialGradient centerX="0.4722222222222222" centerY="0.5095238095238095" focusDistance="0.11627906976744184" radius="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="fullScreen" alignment="CENTER" layoutX="15.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: yellow;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="toBar" alignment="CENTER" layoutX="29.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: #6ced6a;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+         </padding>
+      </HBox>
+      <AnchorPane layoutY="26.0" prefHeight="801.0" prefWidth="1214.0" style="-fx-background-color: #b5b5b5; -fx-opacity: 0.9;">
+         <children>
+            <TableView fx:id="coursaCatalog" layoutY="30.0" prefHeight="540.0" prefWidth="1214.0" style="-fx-background-color: #b5b5b5; -fx-font-size: 16px; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ffc801;" AnchorPane.bottomAnchor="157.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="idTable" editable="false" prefWidth="79.99996948242188" resizable="false" text="Номер" />
+                  <TableColumn fx:id="secondNameTable" editable="false" prefWidth="228.0" resizable="false" text="Фамилия преподавателя" />
+                  <TableColumn fx:id="nameTable" prefWidth="192.0" resizable="false" text="Имя преподавателя" />
+                  <TableColumn fx:id="thirdNameTable" prefWidth="295.0" resizable="false" text="Отчество преподавателя" />
+                  <TableColumn fx:id="hoursTable" editable="false" minWidth="0.0" prefWidth="104.0" resizable="false" text="Часы" />
+                  <TableColumn fx:id="categoryTable" editable="false" minWidth="0.0" prefWidth="144.0" resizable="false" text="Категория" />
+                  <TableColumn fx:id="dateTable" editable="false" prefWidth="170.0" resizable="false" text="Дата создания" />
+               </columns>
+            </TableView>
+            <Button fx:id="backButton" layoutX="23.0" layoutY="703.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="42.0" styleClass="buttonBack" stylesheets="@Style/Style1.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="joinButton" layoutX="542.0" layoutY="694.0" mnemonicParsing="false" styleClass="join" stylesheets="@Style/Style1.css" text="Записаться">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

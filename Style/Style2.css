@@ -1,0 +1,6 @@
+.background {
+	-fx-background-image: url(background1.jpg);
+	-fx-background-repeat: stretch; 
+	-fx-background-position: center, right top;
+	-fx-background-size: cover, auto;
+}

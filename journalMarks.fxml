@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="827.0" prefWidth="1214.0" style="-fx-background-color: #b5b5b5; -fx-opacity: 0.9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.journalMarksController">
+    <children>
+        <SplitPane dividerPositions="0.5148514851485149" layoutX="462.0" layoutY="21.0" prefHeight="806.0" prefWidth="1214.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="825.0" prefWidth="414.0">
+                    <children>
+                        <TableView fx:id="catalogStudents" layoutX="57.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b5b5b5; -fx-font-size: 16px; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ffc801;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="secondNameTable" editable="false" prefWidth="171.0" text="Фамилия " />
+                                <TableColumn fx:id="nameTable" editable="false" prefWidth="196.0" text="Имя" />
+                                <TableColumn fx:id="thirdNameTable" editable="false" prefWidth="176.0" text="Отчество" />
+                                <TableColumn fx:id="markTable" editable="false" prefWidth="77.0" text="Оценка" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #b5b5b5;">
+                    <children>
+                        <Label layoutX="245.0" layoutY="14.0" style="-fx-text-fill: #504f4f; -fx-font-size: 27px;" text="Журнал" />
+                        <Label layoutX="50.0" layoutY="143.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Фамилия" />
+                        <Label layoutX="50.0" layoutY="216.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Имя" />
+                        <Label layoutX="50.0" layoutY="286.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Отчество" />
+                        <TextField fx:id="secondNameLabel" editable="false" layoutX="239.0" layoutY="132.0" prefHeight="53.0" prefWidth="316.0" styleClass="textFields" stylesheets="@Style/Style1.css" />
+                        <TextField fx:id="thirdNameLabel" editable="false" layoutX="239.0" layoutY="277.0" prefHeight="53.0" prefWidth="316.0" styleClass="textFields" stylesheets="@Style/Style1.css" />
+                        <TextField fx:id="nameLabel" editable="false" layoutX="239.0" layoutY="207.0" prefHeight="53.0" prefWidth="316.0" styleClass="textFields" stylesheets="@Style/Style1.css" />
+                        <DatePicker fx:id="datePicker" editable="false" layoutX="258.0" layoutY="68.0" prefHeight="35.0" prefWidth="297.0" promptText="Выберите дату" style="-fx-background-color: transparent;">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </DatePicker>
+                        <Label layoutX="50.0" layoutY="363.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Оценка" />
+                        <Label layoutX="52.0" layoutY="441.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Посещаемость" />
+                        <TextField fx:id="appcentyLabel" editable="false" layoutX="239.0" layoutY="432.0" prefHeight="53.0" prefWidth="316.0" styleClass="textFields" stylesheets="@Style/Style1.css" />
+                        <TextField fx:id="markLabel" editable="false" layoutX="239.0" layoutY="354.0" prefHeight="53.0" prefWidth="316.0" styleClass="textFields" stylesheets="@Style/Style1.css" />
+                        <Button fx:id="changeMarkButton" layoutX="199.0" layoutY="720.0" mnemonicParsing="false" styleClass="join" stylesheets="@Style/Style1.css" text="Изменить оценку">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="backButton" layoutX="23.0" layoutY="22.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="35.0" styleClass="buttonBack" stylesheets="@Style/Style1.css">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                  <TextArea fx:id="infoArea" editable="false" layoutX="41.0" layoutY="499.0" prefHeight="216.0" prefWidth="509.0" promptText="При изменении оценки, вводите значения в поле &quot;Оценка&quot; , система оценивания - пятибальная шкала 1-5 оценки, если студент не присутствовал поставьте 7, если студент присутствовал, но не получил оценку поставьте цифру 6" styleClass="textFields" stylesheets="@Style/Style1.css" visible="false" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <HBox layoutX="164.0" layoutY="1.0" onMouseDragged="#draged" onMousePressed="#pressed" style="-fx-background-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="exit" alignment="CENTER" layoutX="12.0" layoutY="33.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: #f44949;">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <textFill>
+                        <RadialGradient centerX="0.4722222222222222" centerY="0.5095238095238095" focusDistance="0.11627906976744184" radius="1.0">
+                            <stops>
+                                <Stop color="RED" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="fullScreen" alignment="CENTER" cancelButton="true" layoutX="15.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: yellow;" text="Button" visible="false">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="toBar" alignment="CENTER" layoutX="29.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-radius: 14em; -fx-min-width: 14px; -fx-min-height: 14px; -fx-max-height: 14px; -fx-max-width: 14px; -fx-background-color: #6ced6a;" text="Button">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <opaqueInsets>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+            </padding>
+        </HBox>
+    </children>
+</AnchorPane>

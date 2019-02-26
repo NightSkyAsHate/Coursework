@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1214.0" style="-fx-background-color: grey; -fx-opacity: 0.9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.allCoursesJournalController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="268.0" layoutY="158.0" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: grey; -fx-opacity: 0.9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <TableView fx:id="catalogTable" prefHeight="727.0" prefWidth="644.0" style="-fx-background-color: grey; -fx-opacity: 0.9;">
+               <columns>
+                  <TableColumn fx:id="tableNumberCourse" prefWidth="175.0" text="Номер курса" />
+                  <TableColumn fx:id="tableCategory" prefWidth="229.0" text="Категория" />
+                  <TableColumn fx:id="tableHours" prefWidth="199.0" text="Количество часов" />
+               </columns>
+            </TableView>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <GridPane layoutX="72.0" layoutY="43.0" prefHeight="408.0" prefWidth="603.0" style="-fx-font-size: 23px; -fx-text-fill: #e5e5e5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label stylesheets="@../../../School/src/sample/Styles/text6.css" text="Номер курса" />
+                        <Label stylesheets="@../../../School/src/sample/Styles/text6.css" text="Категория" GridPane.rowIndex="1" />
+                        <Label stylesheets="@../../../School/src/sample/Styles/text6.css" text="Количество часов" GridPane.rowIndex="2" />
+                        <Label fx:id="numberCourse" stylesheets="@../../../School/src/sample/Styles/text6.css" text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="category" stylesheets="@../../../School/src/sample/Styles/text6.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="hours" stylesheets="@../../../School/src/sample/Styles/text6.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label stylesheets="@../../../School/src/sample/Styles/text6.css" text="Преподаватель" GridPane.rowIndex="3" />
+                        <Label fx:id="teacher" stylesheets="@../../../School/src/sample/Styles/text6.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Group layoutX="14.0" layoutY="63.0" AnchorPane.bottomAnchor="0.0" />
+                  <Button fx:id="openJournal" layoutX="171.0" layoutY="636.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #504f4f; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ffc801; -fx-font-size: 20px;" text="Открыть журнал курса" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

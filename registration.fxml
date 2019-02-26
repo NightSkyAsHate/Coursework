@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1214.0" style="-fx-background-color: #b5b5b5; -fx-opacity: 0.9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.registrationController">
+   <children>
+      <Label layoutX="70.0" layoutY="67.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Имя" />
+      <TextField fx:id="nameText" layoutX="70.0" layoutY="102.0" prefHeight="56.0" prefWidth="469.0" promptText="Введите имя пользователя" styleClass="textFields" stylesheets="@Style/Style1.css" />
+      <Label layoutX="70.0" layoutY="185.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Фамилия" />
+      <TextField fx:id="secondNameText" layoutX="70.0" layoutY="220.0" prefHeight="46.0" prefWidth="469.0" promptText="Введите фамилию пользователя" styleClass="textFields" stylesheets="@Style/Style1.css" />
+      <Label layoutX="70.0" layoutY="293.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Отчество" />
+      <TextField fx:id="thirdNameText" layoutX="70.0" layoutY="328.0" prefHeight="53.0" prefWidth="469.0" promptText="Введите отчество пользователя" styleClass="textFields" stylesheets="@Style/Style1.css" />
+      <Label layoutX="70.0" layoutY="406.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Логин" />
+      <TextField fx:id="loginText" layoutX="70.0" layoutY="441.0" prefHeight="53.0" prefWidth="469.0" promptText="Введите логин пользователя" styleClass="textFields" stylesheets="@Style/Style1.css" />
+      <Label layoutX="70.0" layoutY="521.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Пароль" />
+      <TextField fx:id="passwordText" layoutX="70.0" layoutY="556.0" prefHeight="53.0" prefWidth="469.0" promptText="Введите пароль пользователя" styleClass="textFields" stylesheets="@Style/Style1.css" />
+      <Label layoutX="658.0" layoutY="67.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Выберите, кем будет пользователь" />
+      <ComboBox fx:id="chooseUser" layoutX="658.0" layoutY="104.0" prefHeight="53.0" prefWidth="469.0" promptText="Выберите из списка" styleClass="textFields" stylesheets="@Style/Style1.css" />
+      <Label layoutX="658.0" layoutY="185.0" styleClass="lablies" stylesheets="@Style/Style1.css" text="Требования к регистрации" />
+      <Button fx:id="registr" layoutX="796.0" layoutY="648.0" mnemonicParsing="false" styleClass="join" stylesheets="@Style/Style1.css" text="Зарегестрировать">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea fx:id="areaText" editable="false" layoutX="658.0" layoutY="221.0" prefHeight="386.0" prefWidth="469.0" styleClass="textFields" stylesheets="@Style/Style1.css" text="В фамилии, имени и отчестве пользователя должны содержаться только буквы английского алфавита, логин и пароль могут состоять из букв и цифр английского алфавита">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextArea>
+   </children>
+</AnchorPane>
